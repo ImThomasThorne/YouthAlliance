@@ -1,0 +1,15 @@
+#009640 - CYA Green
+var(--wp--preset--color--primary)
+ 
+#E6007E - CYA Pink
+var(--wp--preset--color--primary)
+ 
+#F9B233 - CYA Yellow
+var(--wp--preset--color--primary)
+ 
+#000000 - Black
+var(--wp--preset--color--black)
+ 
+#FFFFFF - White
+var(--wp--preset--color--white)
+ 
