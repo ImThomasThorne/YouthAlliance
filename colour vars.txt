@@ -2,10 +2,10 @@
 var(--wp--preset--color--primary)
  
 #E6007E - CYA Pink
-var(--wp--preset--color--primary)
+var(--wp--preset--color--secondary)
  
 #F9B233 - CYA Yellow
-var(--wp--preset--color--primary)
+var(--wp--preset--color--tertiary)
  
 #000000 - Black
 var(--wp--preset--color--black)
