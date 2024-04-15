@@ -39,3 +39,22 @@ Tags: full-site-editing,
   -webkit-box-shadow: 1px 9px 25px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 9px 25px rgba(0, 0, 0, 0.3);
 }
+
+.wp-block-navigation__responsive-container > div {
+  height: auto;
+}
+
+.nav-menu-mobile-item > .wp-block-navigation-item__content > span,
+.nav-menu-mobile-item > .wp-block-button > a {
+  font-size: inherit;
+}
+
+@media only screen and (max-width: 599px) {
+  .wp-block-navigation__responsive-container > div {
+    height: auto;
+  }
+  .nav-menu-mobile-item > .wp-block-navigation-item__content > span,
+  .nav-menu-mobile-item > .wp-block-button > a {
+    font-size: 32px;
+  }
+}
