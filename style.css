@@ -7,7 +7,7 @@ Description: Youth Alliance was built for Cumbria Youth Alliance to use for thei
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 5.7
-Version: 1.0.6
+Version: 1.0.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: youthalliance
@@ -25,12 +25,12 @@ Tags: full-site-editing,
   transform: scale(1.1);
 }
 
-.wp-block-navigation {
+.wp-block-navigation-item {
   transition: all 0.2s ease-in-out;
   color: var(--wp--preset--color--black);
 }
 
-.wp-block-navigation:hover {
+.wp-block-navigation-item:hover {
   color: var(--wp--preset--color--primary);
 }
 
@@ -44,8 +44,8 @@ Tags: full-site-editing,
   height: auto;
 }
 
-.nav-menu-mobile-item > .wp-block-navigation-item__content > span,
-.nav-menu-mobile-item > .wp-block-button > a {
+.wp-block-navigation-item > .wp-block-navigation-item__content > span,
+.wp-block-navigation-item > .wp-block-button > a {
   font-size: inherit;
 }
 
@@ -53,8 +53,9 @@ Tags: full-site-editing,
   .wp-block-navigation__responsive-container > div {
     height: auto;
   }
-  .nav-menu-mobile-item > .wp-block-navigation-item__content > span,
-  .nav-menu-mobile-item > .wp-block-button > a {
+  .wp-block-navigation-item > .wp-block-navigation-item__content > span,
+  .wp-block-navigation-item > .wp-block-button > a,
+  .wp-block-navigation-item__content {
     font-size: 32px;
   }
 }
