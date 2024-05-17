@@ -657,32 +657,6 @@
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
-			"core/read-more": {
-				"color": {
-					"background": "var(--wp--preset--color--primary)",
-					"text": "var(--wp--preset--color--white)"
-				},
-				"elements": {
-					"link": {
-						"color": {
-							"text": "var(--wp--preset--color--white)"
-						},
-						":hover": {
-							"color": {
-								"text": "var(--wp--preset--color--white)"
-							}
-						}
-					}
-				},
-				"spacing": {
-					"padding": {
-						"bottom": "var(--wp--preset--spacing--0)",
-						"left": "var(--wp--preset--spacing--10)",
-						"right": "var(--wp--preset--spacing--10)",
-						"top": "var(--wp--preset--spacing--0)"
-					}
-				}
-			},
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--poppins)"
