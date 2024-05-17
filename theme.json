@@ -666,6 +666,11 @@
 					"link": {
 						"color": {
 							"text": "var(--wp--preset--color--white)"
+						},
+						":hover": {
+							"color": {
+								"text": "var(--wp--preset--color--white)"
+							}
 						}
 					}
 				},
