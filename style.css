@@ -14,14 +14,16 @@ Text Domain: youthalliance
 Tags: full-site-editing, 
 */
 
-.wp-block-button {
+.wp-block-button,
+.wp-block-read-more {
   transition: all 0.2s ease-in-out;
   transform: scale(1);
   border-radius: 0px;
   background-color: var(--wp--preset--color--primary);
 }
 
-.wp-block-button:hover {
+.wp-block-button:hover,
+.wp-block-read-more:hover {
   transform: scale(1.1);
 }
 
