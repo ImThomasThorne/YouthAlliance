@@ -605,7 +605,7 @@
 			},
 			"core/image": {
 				"border": {
-					"radius": "25px"
+					"radius": "0px"
 				}
 			},
 			"core/navigation": {
