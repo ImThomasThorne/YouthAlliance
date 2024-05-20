@@ -584,6 +584,14 @@
 	"styles": {
 		"blocks": {
 			"core/button": {
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--0)",
+						"left": "var(--wp--preset--spacing--10)",
+						"right": "var(--wp--preset--spacing--10)",
+						"top": "var(--wp--preset--spacing--0)"
+					}
+				},
 				"variations": {
 					"outline": {
 						"border": {
@@ -592,6 +600,9 @@
 							"style": "solid",
 							"width": "3px"
 						},
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						},
 						"spacing": {
 							"padding": {
 								"bottom": "var(--wp--preset--spacing--0)",
@@ -599,42 +610,8 @@
 								"right": "var(--wp--preset--spacing--10)",
 								"top": "var(--wp--preset--spacing--0)"
 							}
-						},
-						"color": {
-							"text": "var(--wp--preset--color--primary)"
 						}
 					}
-				},
-				"spacing": {
-					"padding": {
-						"bottom": "var(--wp--preset--spacing--0)",
-						"left": "var(--wp--preset--spacing--10)",
-						"right": "var(--wp--preset--spacing--10)",
-						"top": "var(--wp--preset--spacing--0)"
-					}
-				}
-			},
-			"core/read-more": {
-				"spacing": {
-					"padding": {
-						"bottom": "var(--wp--preset--spacing--0)",
-						"left": "var(--wp--preset--spacing--10)",
-						"right": "var(--wp--preset--spacing--10)",
-						"top": "var(--wp--preset--spacing--0)"
-					}
-				}
-			},
-			"core/social-link": {
-				"spacing": {
-					"blockGap": "var(--wp--preset--spacing--10)"
-				},
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)"
-				}
-			},
-			"core/social-links": {
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			},
 			"core/columns": {
@@ -685,9 +662,32 @@
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
+			"core/read-more": {
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--0)",
+						"left": "var(--wp--preset--spacing--10)",
+						"right": "var(--wp--preset--spacing--10)",
+						"top": "var(--wp--preset--spacing--0)"
+					}
+				}
+			},
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--poppins)"
+				}
+			},
+			"core/social-link": {
+				"spacing": {
+					"blockGap": "var(--wp--preset--spacing--10)"
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
+			"core/social-links": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			}
 		},
