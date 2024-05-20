@@ -7,12 +7,14 @@ Description: Youth Alliance was built for Cumbria Youth Alliance to use for thei
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 5.7
-Version: 1.1.6
+Version: 1.1.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: youthalliance
 Tags: full-site-editing, 
 */
+
+@import url("https://cdn-images.mailchimp.com/embedcode/classic-061523.css");
 
 .wp-block-button {
   transition: all 0.2s ease-in-out;
@@ -136,20 +138,34 @@ span.wpcf7-not-valid-tip {
     border: 0;
 }
 
-.cya-mailchimp {
+#mc_embed_signup {
   width: 100%;
 }
 
-.cya-mailchimp-fields {
-
+#mc_embed_signup form {
+  margin: 0px;
 }
 
-.cya-mailchimp-list {
+#mc_embed_signup {
+  background-color: transparent;
+}
+
+.mc-flex {
   display: flex;
-  flex-direction: column;
-  gap: 0px;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.cya-mailchimp-list br {
-  display: none;
+.mc-flex-left,
+.mc-flex-right {
+  width: 100%;
+}
+
+.mc-name {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#mc-email {
+  width: 100%;
 }
