@@ -35,3 +35,9 @@ $myUpdateChecker->setBranch('main');
 
 //Optional: If you're using a private repository, specify the access token like this:
 $myUpdateChecker->setAuthentication('your-token-here');
+
+function current_year() {
+	return date('Y');
+}
+
+add_shortcode('current-year', 'current_year');
