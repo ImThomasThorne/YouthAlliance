@@ -7,7 +7,7 @@ Description: Youth Alliance was built for Cumbria Youth Alliance to use for thei
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 5.7
-Version: 1.1.8
+Version: 1.1.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: youthalliance
@@ -136,10 +136,4 @@ span.wpcf7-not-valid-tip {
     cursor: pointer;
     box-shadow: 0px 7px 16px -7px rgba(0, 0, 0, 0.4);
     border: 0;
-}
-
-/* Social Icon */
-
-.cya-social-icon {
-  size: 3rem;
 }
