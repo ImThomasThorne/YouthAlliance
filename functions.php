@@ -45,4 +45,3 @@ add_shortcode('current-year', 'current_year');
 
 // Order By
 
-query_posts( array('orderby'=>'menu_order', 'order' => 'ASC' ) );
