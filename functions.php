@@ -45,3 +45,10 @@ add_shortcode('current-year', 'current_year');
 
 // Order By
 
+$posts = get_posts(array(
+    'post_type'         => 'our-team',
+    'posts_per_page'    => -1,
+    'meta_key'          => 'start_date',
+    'orderby'           => 'meta_value_num',
+    'order'             => 'DESC'
+));
