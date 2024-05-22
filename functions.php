@@ -44,30 +44,3 @@ add_shortcode('current-year', 'current_year');
 
 
 // Order By
-
-function my_pre_get_posts( $query ) {
-    
-    // do not modify queries in the admin
-    if( is_admin() ) {
-        
-        return $query;
-        
-    }
-    
-
-    // only modify queries for 'event' post type
-    if( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'our-team' ) {
-        
-        $query->set('orderby', 'meta_value_num');    
-        $query->set('meta_key', 'order-by');    
-        $query->set('order', 'DESC'); 
-        
-    }
-    
-
-    // return
-    return $query;
-
-}
-
-add_action('pre_get_posts', 'my_pre_get_posts');
