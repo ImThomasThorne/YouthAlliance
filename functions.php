@@ -45,7 +45,8 @@ add_shortcode('current-year', 'current_year');
 
 // ACF Blocks
 
-add_action( 'acf/init', 'set_acf_settings' );
-function set_acf_settings() {
-    acf_update_setting( 'enable_shortcode', true );
+if ( function_exists('acf_register_block_type') ) {
+	add_action('acf/init', 'register_acf_block_types');
 }
+
+require_once('acf_blocks/acf_blocks.php');
