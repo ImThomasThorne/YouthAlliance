@@ -48,7 +48,15 @@ add_shortcode('current-year', 'current_year');
 $posts = get_posts(array(
     'post_type'         => 'our-team',
     'posts_per_page'    => -1,
-    'meta_key'          => 'start_date',
+    'meta_key'          => 'order-by',
+    'orderby'           => 'meta_value_num',
+    'order'             => 'DESC'
+));
+
+$the_query = new WP_Query(array(
+    'post_type'         => 'our-team',
+    'posts_per_page'    => -1,
+    'meta_key'          => 'order-by',
     'orderby'           => 'meta_value_num',
     'order'             => 'DESC'
 ));
