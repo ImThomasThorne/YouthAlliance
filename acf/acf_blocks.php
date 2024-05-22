@@ -24,3 +24,23 @@ function custom_category( $categories, $post) {
 }
 
 add_filter('block_categories', 'custom_category', 10, 2);
+
+/** Loading ACF  **/
+
+function cyatheme_block_render_callback( $block ) {
+    $slug = str_replace('act/', '', $block['name']);
+
+    // include a template part from within the "template-parts/blocks" folder
+
+    if( file_exists( get_theme_file_path("/template-parts/blocks/{$slug}.php")) ) {
+        include( get_theme_file_path("/template-parts/blocks/{$slug}.php") );
+    }
+}
+
+// Register ACF Blocks
+
+add_action('acf/init','my_act_init');
+
+function my_act_init() {
+
+}
