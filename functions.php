@@ -44,3 +44,11 @@ add_shortcode('current-year', 'current_year');
 
 
 // Order By
+function postTeamOrder() {
+	$the_query = new WP_Query(array(
+		'post_type'         => 'our-team',
+		'posts_per_page'    => -1,
+		'meta_key'          => 'orderby',
+		'orderby'           => 'meta_value_num'
+	));
+}
