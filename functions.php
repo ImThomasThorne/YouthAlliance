@@ -44,9 +44,3 @@ function current_year() {
 add_shortcode('current-year', 'current_year');
 
 // ACF Blocks
-
-if ( function_exists('acf_register_block_type') ) {
-	add_action('acf/init', 'register_acf_block_types');
-}
-
-require_once('acf_blocks/acf_blocks.php');
